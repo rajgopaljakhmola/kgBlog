@@ -1,0 +1,12 @@
+<header>
+</header>
+<main class="main-container">
+  <ng-template [ngIf]="!isLoggedIn">
+    <app-login (logEventEmitter)="onLogin($event)"></app-login>
+  </ng-template>
+  <ng-template [ngIf]="isLoggedIn">
+    <app-dashboard></app-dashboard>
+  </ng-template>
+</main>
+<footer>
+</footer>

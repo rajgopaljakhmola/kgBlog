@@ -1,0 +1,16 @@
+<div class="login-container flex-column align-center">
+  <form class="login-form flex-column" [formGroup]="loginForm">
+        <mat-form-field appearance="fill">
+          <mat-label>Username</mat-label>
+          <input formControlName="userName" matInput placeholder="Enter username...">
+        </mat-form-field>
+      
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input formControlName="password" matInput placeholder="Enter password...">
+        </mat-form-field>
+
+        <button (click)="login(loginForm)" class="inherit-font" mat-raised-button color="primary">Submit</button>
+
+      </form>
+</div>

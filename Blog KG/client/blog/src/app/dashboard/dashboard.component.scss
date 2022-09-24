@@ -1,0 +1,308 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.dashboard-header {
+    height: 60px;
+    background-color: rgb(255, 253, 253);
+    box-shadow: rgba(255, 249, 249, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+    .hero {
+        padding: 0.85rem 3rem;
+    }
+}
+
+.dashboard {
+    padding: 3rem;
+
+    .dashboard-container {
+        max-width: 848px;
+
+        // input fields
+        textarea {
+            all: inherit;
+            width: 100%;
+            max-width: 848px;
+            // height: auto;
+            overflow: hidden;
+        }
+
+        .list-item-body-textarea {
+            all: initial;
+            font-size: inherit;
+            font-family: inherit;
+            width: 100%;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        .date {
+            all: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img-picker {
+            width: 100%;
+        }
+
+        .add-photo-icon {
+            height: auto;
+            width: auto;
+            font-size: 3rem;
+            color: rgb(144, 214, 39);
+            padding: 0.5rem;
+            background: whitesmoke;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background: rgba(182, 181, 181, 0.258);
+            }
+        }
+        .add-item-container{
+            .add-item{
+                height: auto;
+                width: auto;
+                font-size: 2rem;
+            }
+        }
+
+        .dashboard-form {
+            width: 600px;
+        }
+
+        .left {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            justify-content: flex-start;
+
+            .blog-main-img-container {
+                max-width: 700px;
+
+                .blog-main-image {
+                    border-radius: 20px;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                // angular blog specific
+                position: relative;
+                overflow: hidden;
+
+                .remove-image {
+                    display: none;
+                }
+
+                &:hover {
+                    .remove-image {
+                        border-radius: 20px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        cursor: pointer;
+                        padding: 2rem;
+                        background-color: rgba(0, 0, 0, 0.185);
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .remove-image-icon {
+                            color: red;
+                            height: auto;
+                            width: auto;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+
+            .description {
+                font-size: 18px;
+                line-height: 32px;
+
+            }
+
+            .list-heading {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            ol {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 5px;
+                padding-left: 60px;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    padding: 15px;
+                    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.235);
+                    position: relative;
+
+                    .list-item-title {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+
+                    .list-item-body {
+                        border-left: 5px solid var(--accent);
+                        padding: 5px 15px;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        background-color: rgba(255, 200, 47, 0.139);
+                        line-height: 24px;
+                        font-size: 16px;
+                    }
+
+                    div {
+                        height: 300px;
+                        width: 100%;
+                        border-radius: 8px;
+
+                        .list-item-img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .remove-list-container{
+                        display: none;
+                    }
+                    &:hover{
+                        .remove-list-container{
+                            position: absolute;
+                            top:0;
+                            right: 0;
+                            width: fit-content;
+                            height: fit-content;
+                            position: absolute;
+                            padding: 0.5rem 0.5rem 0 0rem;
+                            display: flex;
+                            justify-content: flex-end;
+                            .remove-list-item{
+                                
+                            }
+                        }
+                    }
+
+                    .list-item-img-container {
+                        position: relative;
+                        overflow: hidden;
+
+                        .remove-image {
+                            display: none;
+                        }
+                        .list-item-img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        &:hover {
+                            .remove-image {
+                                border-radius: 20px;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                width: 100%;
+                                cursor: pointer;
+                                padding: 2rem;
+                                background-color: rgba(0, 0, 0, 0.185);
+                                display: flex;
+                                justify-content: flex-end;
+
+                                .remove-image-icon {
+                                    color: red;
+                                    height: auto;
+                                    width: auto;
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                li {
+                    counter-increment: step-counter;
+                }
+
+                li::before {
+                    content: counter(step-counter);
+                    position: absolute;
+                    font-size: 20px;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(-115%, -50%);
+                    padding: 20px 20px;
+                    height: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 10px;
+                    background-color: red;
+                    border-radius: 50%;
+                    background-color: var(--accent);
+                    color: var(--primary);
+                    box-shadow: 0px 2px 8px rgba(255, 200, 47, 0.317);
+                }
+
+                li::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(-700%, 0%);
+                    height: 130%;
+                    z-index: -1;
+                    width: 5px;
+                    background-color: rgb(248, 215, 123);
+                }
+
+                li:last-of-type::after {
+                    height: 100%;
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                .main {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .left {
+        width: 100%;
+    }
+}
